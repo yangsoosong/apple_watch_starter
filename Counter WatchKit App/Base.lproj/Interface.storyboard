@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Counter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="0" id="3VS-MT-HK9"/>
+                        <button width="1" alignment="left" title="Increment" id="BeR-xq-V5b">
+                            <connections>
+                                <action selector="incrementCoutner" destination="AgC-eL-Hgc" id="hAY-P1-zrB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Save" id="YqN-kE-Xp8">
+                            <connections>
+                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="Cqg-4w-E0U"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="y68-pd-2St">
+                            <connections>
+                                <action selector="reset" destination="AgC-eL-Hgc" id="VH6-t5-nYl"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="counterlabel" destination="3VS-MT-HK9" id="eje-9Q-ch9"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
